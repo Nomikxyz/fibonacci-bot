@@ -41,7 +41,7 @@ def main():
     print text
     print boilertext
     if (boilertext == text):
-        print("Triggered received.")
+        print("Trigger received.")
     else: 
         print("No trigger detected")
 while True:
