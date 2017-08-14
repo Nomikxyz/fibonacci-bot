@@ -29,7 +29,7 @@ def main():
     niceday = str(now.day)
     niceyear = str(now.year)
     nicehour = now.hour
-    niceminute = str(now.minute)
+    niceminute = now.minute
     if (nicehour > 12):
         amorpm = "PM"
         nicehour+=-12
