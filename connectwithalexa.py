@@ -37,7 +37,9 @@ def main():
     elif (nicehour < 12):
         amorpm = "AM"
         nicesthour = "0" + str(nicehour)
-    boilertext = "This tweet is an API link." + " " + monthword + " " + niceday + ", " + niceyear + " at " + nicesthour + ":" + niceminute + amorpm
+    if (niceminute < 10):
+        nicestminute = "0" + str(niceminute)
+    boilertext = "This tweet is an API link." + " " + monthword + " " + niceday + ", " + niceyear + " at " + nicesthour + ":" + nicestminute + amorpm
     print text
     print boilertext
     if (boilertext == text):
@@ -46,4 +48,4 @@ def main():
         print("No trigger detected")
 while True:
     main()      
-    time.sleep(60)
+    time.sleep(5)
